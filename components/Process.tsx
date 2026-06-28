@@ -66,10 +66,15 @@ export default function Process() {
 
       {/* HUGE "OUR PROCESS" TEXT */}
       <div className="w-full flex justify-center mb-10 px-4">
-        <h2 className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold text-center leading-none tracking-tight"
-            style={{ fontSize: "clamp(4rem, 12vw, 12rem)" }}>
+        <motion.h2 
+          initial={{ opacity: 0, y: 40, letterSpacing: "-0.05em", filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, letterSpacing: "normal", filter: "blur(0px)" }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold text-center leading-none tracking-tight"
+          style={{ fontSize: "clamp(4rem, 12vw, 12rem)" }}>
           OUR PROCESS
-        </h2>
+        </motion.h2>
       </div>
 
       {/* CONNECTED STEPS CONTAINER */}
@@ -96,11 +101,12 @@ export default function Process() {
             if (i === 3) translateClass = "lg:-translate-y-[20px]";
 
             return (
-              <motion.div
-                key={step.num}
-                variants={item}
-                className={`glow-border bg-[#101014] p-5 md:p-6 w-full max-w-[320px] flex items-center gap-4 shadow-2xl backdrop-blur-sm ${translateClass}`}
-              >
+              <div key={step.num} className={`relative z-10 w-full max-w-[320px] ${translateClass}`}>
+                <motion.div
+                  variants={item}
+                  whileHover={{ scale: 1.05, y: -10, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
+                  className={`glow-border bg-[#101014] p-5 md:p-6 w-full flex items-center gap-4 shadow-2xl backdrop-blur-sm cursor-default`}
+                >
                 {/* Number */}
                 <span className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none"
                       style={{ fontSize: "clamp(3.5rem, 5vw, 4.5rem)" }}>
@@ -120,6 +126,7 @@ export default function Process() {
                   {step.icon}
                 </div>
               </motion.div>
+            </div>
             );
           })}
         </motion.div>
@@ -129,22 +136,30 @@ export default function Process() {
       <div className="relative w-full px-4 md:px-16 mt-12 flex justify-center pb-20">
         
         {/* Background Image Container */}
-        <div className="relative w-full max-w-[1100px] h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden ml-auto">
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          whileHover={{ scale: 1.02, y: -5, boxShadow: "0 30px 60px rgba(0,0,0,0.8)", zIndex: 10 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ type: "spring", stiffness: 80, damping: 20 }}
+          className="relative w-full max-w-[1100px] h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden ml-auto"
+        >
           <Image 
             src="/images/hardscaping.png" 
             alt="Outdoor Kitchen" 
             fill 
             className="object-cover brightness-75"
           />
-        </div>
+        </motion.div>
 
         {/* Floating Contact Block */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center"
+          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default"
         >
           <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight mb-8"
               style={{ fontSize: "clamp(4rem, 8vw, 7rem)" }}>

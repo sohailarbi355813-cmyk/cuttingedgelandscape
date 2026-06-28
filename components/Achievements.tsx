@@ -95,10 +95,24 @@ export default function Achievements() {
               <span className="w-8 h-px bg-[#C9A84C]"></span>
               RECOGNITION
             </p>
-            <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight"
-                style={{ fontSize: "clamp(3.5rem, 6vw, 6rem)" }}>
-              Achieve<br/>ments
-            </h2>
+            <motion.h2 
+              className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight"
+              style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.05, delayChildren: 0.2 }
+                }
+              }}
+            >
+              {"Achievements".split("").map((char, i) => (
+                <motion.span key={`l1-${i}`} variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>{char}</motion.span>
+              ))}
+            </motion.h2>
           </motion.div>
 
           <motion.p
@@ -128,9 +142,9 @@ export default function Achievements() {
               <motion.div
                 key={i}
                 variants={item}
-                whileHover={{ y: -10 }}
+                whileHover={{ scale: 1.05, y: -12, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
                 transition={{ type: "spring", stiffness: 200, damping: 24 }}
-                className={`glow-border bg-[#101014]/90 backdrop-blur-xl p-8 flex flex-col justify-between h-[320px] shadow-[0_20px_40px_rgba(0,0,0,0.5)] cursor-default ${yOffset}`}
+                className={`glow-border bg-[#101014]/90 backdrop-blur-xl p-8 flex flex-col justify-between h-[320px] shadow-[0_20px_40px_rgba(0,0,0,0.5)] cursor-default relative ${yOffset}`}
               >
                 {/* Top: Icon and Source */}
                 <div>

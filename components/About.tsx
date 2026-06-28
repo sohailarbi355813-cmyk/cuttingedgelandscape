@@ -39,9 +39,10 @@ export default function About() {
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02, y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.8)", zIndex: 50 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.1 }}
-            className="glow-border bg-[#101014]/90 backdrop-blur-xl p-8 md:p-10 shadow-2xl relative z-20"
+            className="glow-border bg-[#101014]/90 backdrop-blur-xl p-8 md:p-10 shadow-2xl relative z-20 cursor-default"
           >
             <div className="space-y-6 text-[#888890] text-sm leading-relaxed">
               <p>
@@ -67,6 +68,7 @@ export default function About() {
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.02, y: -5, boxShadow: "0 40px 80px rgba(0,0,0,0.8)", zIndex: 50 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.1 }}
               className="absolute top-0 right-0 w-[85%] h-[85%] glow-border rounded-[1.5rem] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.6)] z-10"
@@ -78,6 +80,7 @@ export default function About() {
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.2 }}
               className="absolute bottom-0 left-0 w-[55%] h-[50%] glow-border rounded-[1.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.9)] z-20"
@@ -110,9 +113,10 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02, y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.8)", zIndex: 50 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.3 }}
-            className="glow-border bg-[#101014]/90 backdrop-blur-xl p-6 md:p-8 shadow-xl w-full xl:w-[85%] self-end"
+            className="glow-border bg-[#101014]/90 backdrop-blur-xl p-6 md:p-8 shadow-xl w-full xl:w-[85%] self-end cursor-default"
           >
             <p className="text-[#888890] text-sm leading-relaxed mb-5">
               A constant focus on detail, dependable service, and a personalized, step-by-step process for every client has earned the reputation of Cutting Edge Landscaping. Our determination to benefit our clients has resulted in an impressive referral rate among the top in the industry.

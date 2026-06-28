@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SERVICES = [
-  { num: "01", name: "Flagstone", image: "/images/hardscaping.png", desc: "Cutting Edge landscaping has provided premium landscape and maintenance services." },
-  { num: "02", name: "Retaining Walls", image: "/images/hero.png", desc: "Durable and aesthetically pleasing retaining walls." },
-  { num: "03", name: "Hot Tubs", image: "/images/hardscaping.png", desc: "Transform your backyard into a personal oasis." },
-  { num: "04", name: "Decks & Fences", image: "/images/hero.png", desc: "Custom-built wooden structures providing privacy and perfect outdoor living spaces." },
-  { num: "05", name: "Artificial Turf", image: "/images/hardscaping.png", desc: "Low-maintenance, evergreen artificial turf installations." },
+  { num: "01", name: "Flagstone", image: "/images/flagstone.jpeg", desc: "Cutting Edge landscaping has provided premium landscape and maintenance services." },
+  { num: "02", name: "Retaining Walls", image: "/images/retaining-walls-premium.png", desc: "Durable and aesthetically pleasing retaining walls." },
+  { num: "03", name: "Hot Tubs", image: "/images/hot-tubs.jpeg", desc: "Transform your backyard into a personal oasis." },
+  { num: "04", name: "Decks & Fences", image: "/images/decks-fences.jpeg", desc: "Custom-built wooden structures providing privacy and perfect outdoor living spaces." },
+  { num: "05", name: "Artificial Turf", image: "/images/artificial-turf.jpeg", desc: "Low-maintenance, evergreen artificial turf installations." },
   { num: "06", name: "Property Maintenance", image: "/images/hero.png", desc: "Comprehensive maintenance packages for your landscape." },
-  { num: "07", name: "Pools", image: "/images/hardscaping.png", desc: "Luxury pool design and construction tailored to your backyard environment." },
-  { num: "08", name: "Snow Removal", image: "/images/hero.png", desc: "Reliable commercial and residential snow clearing." },
-  { num: "09", name: "Interlocking Stone", image: "/images/hardscaping.png", desc: "Premium interlocking driveways, patios, and walkways built to last." },
-  { num: "10", name: "Sodding", image: "/images/hero.png", desc: "Instant, lush green lawns installed with premium quality sod." },
+  { num: "07", name: "Pools", image: "/images/pools.jpeg", desc: "Luxury pool design and construction tailored to your backyard environment." },
+  { num: "08", name: "Snow Removal", image: "/images/snow-removal.jpeg", desc: "Reliable commercial and residential snow clearing." },
+  { num: "09", name: "Interlocking Stone", image: "/images/interlocking-stone.jpeg", desc: "Premium interlocking driveways, patios, and walkways built to last." },
+  { num: "10", name: "Sodding", image: "/images/sodding.jpeg", desc: "Instant, lush green lawns installed with premium quality sod." },
 ];
 
 export default function Services() {
@@ -35,6 +35,7 @@ export default function Services() {
 
           if (styleType === 0) {
             // STYLE 0: Left aligned, Image left, Text right
+            const lastCardOverride = i === 9 ? 'mx-auto mt-16 md:mt-12' : (!isFirst ? 'mt-8 md:-mt-24' : '');
             return (
               <motion.div 
                 key={service.num}
@@ -44,7 +45,7 @@ export default function Services() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
-                className={`relative w-full md:w-[600px] mr-auto glow-border bg-[#0d0d12] flex flex-col md:flex-row h-auto md:h-[280px] shadow-2xl rounded-[1rem] ${!isFirst ? 'mt-8 md:-mt-24' : ''}`}
+                className={`relative w-full md:w-[600px] mr-auto glow-border bg-[#0d0d12] flex flex-col md:flex-row h-auto md:h-[280px] shadow-2xl rounded-[1rem] ${lastCardOverride}`}
               >
                 {/* Image side */}
                 <div className="relative w-full md:w-[45%] h-[200px] md:h-full rounded-t-[1rem] md:rounded-tr-none md:rounded-l-[1rem] overflow-hidden">

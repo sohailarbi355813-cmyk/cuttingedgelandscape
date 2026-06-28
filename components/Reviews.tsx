@@ -48,11 +48,24 @@ export default function Reviews() {
         >
           <div>
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#C9A84C] mb-5 font-semibold">— Client Testimonials</p>
-            <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8]
-                           leading-none tracking-tighter"
-                style={{ fontSize: "clamp(3.5rem, 8vw, 8rem)" }}>
-              Reviews
-            </h2>
+            <motion.h2 
+              className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tighter"
+              style={{ fontSize: "clamp(3.5rem, 8vw, 8rem)" }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.08, delayChildren: 0.2 }
+                }
+              }}
+            >
+              {"Reviews".split("").map((char, i) => (
+                <motion.span key={`r-${i}`} variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>{char}</motion.span>
+              ))}
+            </motion.h2>
           </div>
           <p className="text-[#F5F0E8]/35 text-sm leading-relaxed max-w-[220px] md:text-right mb-2">
             Every project finished with 5-star reviews from our clients across Toronto.

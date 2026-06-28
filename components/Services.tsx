@@ -40,6 +40,7 @@ export default function Services() {
                 key={service.num}
                 initial={{ opacity: 0, x: -30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
+                whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 30px 60px rgba(0,0,0,0.8)" }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
@@ -79,6 +80,7 @@ export default function Services() {
                 key={service.num}
                 initial={{ opacity: 0, x: 30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
+                whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)" }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
@@ -112,6 +114,7 @@ export default function Services() {
                 key={service.num}
                 initial={{ opacity: 0, x: -30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
+                whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)" }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}

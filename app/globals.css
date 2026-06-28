@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0a0a0c; /* Deep obsidian */
+  color: #F5F0E8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ── Global Grid overlay ────────────────────────────────── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 160px 160px;
+  background-position: center top;
+}
+
+/* ── Review carousel ─────────────────────────────────────── */
+.reviews-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: scrollTrack 36s linear infinite;
+  will-change: transform;
+}
+.reviews-track:hover { animation-play-state: paused; }
+
+@keyframes scrollTrack {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Glow Border Utility for the specific screenshot style */
+.glow-border {
+  position: relative;
+  border-radius: 1rem;
+}
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px; 
+  background: linear-gradient(135deg, rgba(168, 116, 255, 0.5) 0%, rgba(201, 168, 76, 0.1) 40%, rgba(201, 168, 76, 0.5) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

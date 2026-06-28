@@ -18,7 +18,7 @@ export default function Hero() {
   const opacity  = useSpring(rawOpacity, { stiffness: 80, damping: 28 });
 
   return (
-    <section ref={ref} className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-hidden bg-[#050505]">
+    <section id="home" ref={ref} className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-hidden bg-[#050505]">
 
       {/* ── Parallax BG layer ── */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110 will-change-transform">
@@ -70,8 +70,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 80, damping: 22, delay: 0.52 }}
-          className="text-[#F5F0E8]/55 font-light max-w-sm leading-relaxed mt-8 ml-auto
-                     text-right text-[0.95rem]"
+          className="text-[#F5F0E8]/55 font-light max-w-sm leading-relaxed mt-8 md:ml-auto ml-0
+                     text-left md:text-right text-[0.95rem]"
         >
           Landscape construction and maintenance across the greater Toronto area
           since 2004. Flagstone, Retaining Walls, Snow Removal, and beyond.
@@ -82,7 +82,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 80, damping: 22, delay: 0.68 }}
-          className="flex items-center gap-5 mt-10"
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-5 mt-10 md:justify-end"
         >
           <a href="#contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C9A84C] text-[#050505]

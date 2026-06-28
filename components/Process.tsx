@@ -89,19 +89,17 @@ export default function Process() {
           className="relative z-10 flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-6 lg:gap-8"
         >
           {STEPS.map((step, i) => {
-            // Give them slightly staggered vertical positions
-            let yOffset = "0px";
-            if (i === 0) yOffset = "20px";
-            if (i === 1) yOffset = "-30px";
-            if (i === 2) yOffset = "30px";
-            if (i === 3) yOffset = "-20px";
+            let translateClass = "";
+            if (i === 0) translateClass = "lg:translate-y-[20px]";
+            if (i === 1) translateClass = "lg:-translate-y-[30px]";
+            if (i === 2) translateClass = "lg:translate-y-[30px]";
+            if (i === 3) translateClass = "lg:-translate-y-[20px]";
 
             return (
               <motion.div
                 key={step.num}
                 variants={item}
-                className="glow-border bg-[#101014] p-5 md:p-6 w-full max-w-[320px] flex items-center gap-4 shadow-2xl backdrop-blur-sm"
-                style={{ transform: `translateY(${yOffset})` }}
+                className={`glow-border bg-[#101014] p-5 md:p-6 w-full max-w-[320px] flex items-center gap-4 shadow-2xl backdrop-blur-sm ${translateClass}`}
               >
                 {/* Number */}
                 <span className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none"
@@ -146,7 +144,7 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          className="absolute left-[5%] md:left-[15%] top-[10%] glow-border bg-[#0a0a0c]/80 backdrop-blur-xl px-10 md:px-20 py-12 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center"
+          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center"
         >
           <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight mb-8"
               style={{ fontSize: "clamp(4rem, 8vw, 7rem)" }}>

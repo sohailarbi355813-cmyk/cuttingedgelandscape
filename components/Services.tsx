@@ -66,7 +66,7 @@ export default function Services() {
                 {/* Huge Number Overlay */}
                 <div className="absolute top-[100px] md:top-1/2 -translate-y-1/2 left-8 md:left-12 pointer-events-none drop-shadow-2xl">
                   <span className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold leading-none select-none"
-                        style={{ fontSize: "clamp(6rem, 12vw, 9rem)" }}>
+                        style={{ fontSize: "clamp(4rem, 12vw, 9rem)" }}>
                     {service.num}
                   </span>
                 </div>
@@ -100,7 +100,7 @@ export default function Services() {
                 {/* Huge Number Overlay */}
                 <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 pointer-events-none drop-shadow-2xl">
                   <span className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold leading-none select-none"
-                        style={{ fontSize: "clamp(8rem, 14vw, 14rem)" }}>
+                        style={{ fontSize: "clamp(4.5rem, 14vw, 14rem)" }}>
                     {service.num}
                   </span>
                 </div>
@@ -144,7 +144,7 @@ export default function Services() {
                 {/* Huge Number Overlay */}
                 <div className="absolute top-[80px] md:top-1/2 -translate-y-1/2 left-4 md:-left-8 pointer-events-none drop-shadow-xl">
                   <span className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold leading-none select-none"
-                        style={{ fontSize: "clamp(6rem, 14vw, 12rem)" }}>
+                        style={{ fontSize: "clamp(4rem, 14vw, 12rem)" }}>
                     {service.num}
                   </span>
                 </div>

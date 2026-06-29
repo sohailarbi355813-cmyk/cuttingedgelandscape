@@ -81,7 +81,7 @@ export default function Achievements() {
         </span>
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-16">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-4 md:px-16">
 
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">

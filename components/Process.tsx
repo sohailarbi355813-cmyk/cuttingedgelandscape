@@ -78,7 +78,7 @@ export default function Process() {
       </div>
 
       {/* CONNECTED STEPS CONTAINER */}
-      <div className="relative w-full px-6 md:px-16 pb-32">
+      <div className="relative w-full px-4 md:px-16 pb-32">
         {/* SVG Squiggly connecting line */}
         <div className="absolute top-1/2 left-[10%] right-[10%] h-[150px] -translate-y-1/2 hidden lg:block pointer-events-none z-0">
           <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1000 100" fill="none" stroke="rgba(168,116,255,0.4)" strokeWidth="1.5">
@@ -159,10 +159,10 @@ export default function Process() {
           whileHover={{ scale: 1.05, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default"
+          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-4 md:px-20 py-8 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default"
         >
           <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight mb-8"
-              style={{ fontSize: "clamp(4rem, 8vw, 7rem)" }}>
+              style={{ fontSize: "clamp(2.5rem, 10vw, 7rem)" }}>
             Contact-Us
           </h2>
           

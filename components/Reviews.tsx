@@ -37,7 +37,7 @@ export default function Reviews() {
     <section className="relative bg-[#050505] overflow-hidden">
       <div className="border-t border-[0.5px] border-[#E6E6FA]/8" />
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-16 pt-28 md:pt-36 pb-12">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-16 pt-28 md:pt-36 pb-12">
         {/* Header — Scale Shock, left-right split */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

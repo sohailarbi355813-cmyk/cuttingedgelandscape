@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Radial depth */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,255,255,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(5,5,5,0.18),transparent_55%)]" />
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-16 py-28 md:py-36">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-4 md:px-16 py-28 md:py-36">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export default function Footer() {
             >
               <p className="text-[10px] uppercase tracking-[0.3em] text-[#050505]/50 mb-5 font-semibold">— Free Estimate</p>
               <h2 className="font-[family-name:var(--font-display)] font-bold text-[#050505] leading-none tracking-tighter"
-                  style={{ fontSize: "clamp(3rem, 7vw, 7rem)" }}>
+                  style={{ fontSize: "clamp(2.5rem, 9vw, 7rem)" }}>
                 Contact Us<br/>for a Free<br/>Estimate
               </h2>
             </motion.div>
@@ -104,7 +104,7 @@ export default function Footer() {
       <footer id="contact" className="bg-[#0a0a0c] relative overflow-hidden pt-28 pb-16">
 
         {/* Removed grid lines, kept clean background */}
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-16">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-4 md:px-16">
 
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr] gap-20 lg:gap-16 mb-28">
 

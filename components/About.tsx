@@ -14,7 +14,7 @@ export default function About() {
         </span>
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-16 flex flex-col xl:flex-row items-start gap-12 xl:gap-16">
+      <div className="relative z-10 w-full px-4 md:px-16 flex flex-col xl:flex-row items-start gap-12 xl:gap-16">
         
         {/* LEFT COLUMN - MAIN TEXT */}
         <div className="w-full xl:w-[45%] flex flex-col">
@@ -62,7 +62,7 @@ export default function About() {
         <div className="w-full xl:w-[55%] flex flex-col gap-10 mt-6 xl:mt-0">
           
           {/* IMAGE COMPOSITION */}
-          <div className="relative w-full h-[450px] md:h-[550px] flex justify-end">
+          <div className="relative w-full h-[350px] md:h-[550px] flex justify-end">
             
             {/* Main Large Image */}
             <motion.div 
@@ -100,7 +100,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.3 }}
-              className="absolute top-[5%] left-[5%] xl:-left-[5%] w-32 h-32 md:w-36 md:h-36 rounded-full glow-border bg-[#0a0a0c]/90 backdrop-blur-xl flex flex-col items-center justify-center z-30 shadow-[0_20px_40px_rgba(0,0,0,0.9)]"
+              className="absolute top-[5%] left-0 xl:-left-[5%] w-32 h-32 md:w-36 md:h-36 rounded-full glow-border bg-[#0a0a0c]/90 backdrop-blur-xl flex flex-col items-center justify-center z-30 shadow-[0_20px_40px_rgba(0,0,0,0.9)]"
             >
               <div className="relative z-10 flex flex-col items-center">
                 <span className="font-[family-name:var(--font-display)] text-[#C9A84C] text-4xl md:text-5xl font-bold leading-none mb-1">20<span className="text-2xl md:text-3xl">+</span></span>

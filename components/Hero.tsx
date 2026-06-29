@@ -33,7 +33,7 @@ export default function Hero() {
 
       {/* ── CONTENT — foreground scrolls faster than BG ── */}
       <motion.div style={{ y: textY, opacity }}
-        className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-16 pb-20 md:pb-32">
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-16 pb-20 md:pb-32">
 
         {/* Micro label */}
         <motion.div
@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ type: "spring", stiffness: 70, damping: 18, delay: 0.3 }}
             className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold
                        leading-none tracking-tighter"
-            style={{ fontSize: "clamp(3.5rem, 9.5vw, 9rem)" }}
+            style={{ fontSize: "clamp(2.5rem, 11vw, 9rem)" }}
           >
             Where{" "}
             <em className="text-[#C9A84C] not-italic">Service</em>

@@ -133,7 +133,7 @@ export default function Process() {
       </div>
 
       {/* CONTACT US BLOCK (Overlapping image) */}
-      <div className="relative w-full px-4 md:px-16 mt-12 flex justify-center pb-20">
+      <div className="relative w-full px-4 md:px-16 mt-12 flex flex-col md:block pb-20">
         
         {/* Background Image Container */}
         <motion.div 
@@ -142,7 +142,7 @@ export default function Process() {
           whileHover={{ scale: 1.02, y: -5, boxShadow: "0 30px 60px rgba(0,0,0,0.8)", zIndex: 10 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          className="relative w-full max-w-[1100px] h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden ml-auto"
+          className="relative w-full md:max-w-[1100px] h-[300px] md:h-[500px] rounded-[2rem] overflow-hidden md:ml-auto order-2 md:order-none"
         >
           <Image 
             src="/images/hardscaping.png" 
@@ -159,11 +159,11 @@ export default function Process() {
           whileHover={{ scale: 1.05, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[15%] top-1/2 -translate-y-1/2 md:top-[10%] md:translate-y-0 w-[85%] md:w-auto glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-4 md:px-20 py-8 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default"
+          className="relative md:absolute w-full md:w-auto left-0 md:left-[15%] top-0 md:top-1/2 md:-translate-y-1/2 glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default order-1 md:order-none mb-6 md:mb-0"
         >
           <h2 className="font-[family-name:var(--font-display)] font-bold text-[#F5F0E8] leading-none tracking-tight mb-8"
-              style={{ fontSize: "clamp(2.5rem, 10vw, 7rem)" }}>
-            Contact-Us
+              style={{ fontSize: "clamp(2rem, 8vw, 7rem)" }}>
+            Contact Us
           </h2>
           
           <a href="#contact" className="group relative rounded-full bg-[#353232] border border-[#C9A84C]/50 px-6 py-3 overflow-hidden">

@@ -62,7 +62,7 @@ export default function Footer() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ type: "spring", stiffness: 70, damping: 20 }}
             >
               <p className="text-[10px] uppercase tracking-[0.3em] text-[#050505]/50 mb-5 font-semibold">— Free Estimate</p>
@@ -75,7 +75,7 @@ export default function Footer() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ type: "spring", stiffness: 70, damping: 22, delay: 0.15 }}
               className="max-w-xs md:text-right"
             >

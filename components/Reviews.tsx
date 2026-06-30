@@ -42,7 +42,7 @@ export default function Reviews() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ type: "spring", stiffness: 70, damping: 20 }}
           className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-5"
         >
@@ -53,7 +53,7 @@ export default function Reviews() {
               style={{ fontSize: "clamp(3.5rem, 8vw, 8rem)" }}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, amount: 0.1 }}
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
@@ -100,8 +100,8 @@ export default function Reviews() {
 
               {/* Decorative quote glyph */}
               <span aria-hidden
-                className="absolute -top-3 left-5 font-[family-name:var(--font-display)] font-bold
-                           text-[7rem] leading-none text-[#C9A84C]/06 select-none pointer-events-none">
+                 className="absolute -top-3 left-5 font-[family-name:var(--font-display)] font-bold
+                            text-[7rem] leading-none text-[#C9A84C] opacity-5 select-none pointer-events-none">
                 &ldquo;
               </span>
 

@@ -88,7 +88,7 @@ export default function Achievements() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ type: "spring", stiffness: 70, damping: 20 }}
           >
             <p className="text-[#888890] text-[10px] uppercase tracking-[0.2em] font-semibold mb-4 flex items-center gap-3">
@@ -100,7 +100,7 @@ export default function Achievements() {
               style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, amount: 0.1 }}
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
@@ -131,7 +131,7 @@ export default function Achievements() {
           variants={container} 
           initial="hidden"
           whileInView="visible" 
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-8"
         >
           {AWARDS.map((award, i) => {

@@ -69,7 +69,7 @@ export default function Process() {
         <motion.h2 
           initial={{ opacity: 0, y: 40, letterSpacing: "-0.05em", filter: "blur(8px)" }}
           whileInView={{ opacity: 1, y: 0, letterSpacing: "normal", filter: "blur(0px)" }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="font-[family-name:var(--font-display)] text-[#F5F0E8] font-bold text-center leading-none tracking-tight"
           style={{ fontSize: "clamp(4rem, 12vw, 12rem)" }}>
@@ -90,7 +90,7 @@ export default function Process() {
           variants={container} 
           initial="hidden" 
           whileInView="visible" 
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="relative z-10 flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-6 lg:gap-8"
         >
           {STEPS.map((step, i) => {
@@ -140,7 +140,7 @@ export default function Process() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02, y: -5, boxShadow: "0 30px 60px rgba(0,0,0,0.8)", zIndex: 10 }}
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
           className="relative w-full md:max-w-[1100px] h-[300px] md:h-[500px] rounded-[2rem] overflow-hidden md:ml-auto order-2 md:order-none"
         >
@@ -157,7 +157,7 @@ export default function Process() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)", zIndex: 50 }}
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
           className="relative md:absolute w-full md:w-auto left-0 md:left-[15%] top-0 md:top-1/2 md:-translate-y-1/2 glow-border bg-[#0a0a0c]/90 backdrop-blur-xl px-6 md:px-20 py-10 md:py-16 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20 flex flex-col items-center cursor-default order-1 md:order-none mb-6 md:mb-0"
         >

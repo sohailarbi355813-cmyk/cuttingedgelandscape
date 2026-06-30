@@ -42,7 +42,7 @@ export default function Services() {
                 initial={{ opacity: 0, x: -30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 30px 60px rgba(0,0,0,0.8)" }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
                 className={`relative w-full md:w-[600px] mr-auto glow-border bg-[#0d0d12] flex flex-col md:flex-row h-auto md:h-[280px] shadow-2xl rounded-[1rem] ${lastCardOverride}`}
@@ -82,7 +82,7 @@ export default function Services() {
                 initial={{ opacity: 0, x: 30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)" }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
                 className="relative w-full md:w-[75%] lg:w-[800px] h-[250px] md:h-[300px] ml-auto glow-border shadow-[0_40px_80px_rgba(0,0,0,0.6)] rounded-[1rem] overflow-hidden mt-8 md:-mt-24"
@@ -116,7 +116,7 @@ export default function Services() {
                 initial={{ opacity: 0, x: -30, y: 30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 whileHover={{ zIndex: 200, scale: 1.02, y: -8, boxShadow: "0 40px 80px rgba(0,0,0,0.9)" }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ type: "spring", stiffness: 60, damping: 20 }}
                 style={{ zIndex: i * 10 }}
                 className="relative w-full md:w-[650px] ml-0 md:ml-[10%] mr-auto glow-border bg-[#0d0d12] flex flex-col md:flex-row h-auto md:h-[300px] shadow-[0_40px_80px_rgba(0,0,0,0.8)] rounded-[1rem] mt-8 md:-mt-24"

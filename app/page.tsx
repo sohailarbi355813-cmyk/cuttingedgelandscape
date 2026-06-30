@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Achievements from "@/components/Achievements";
 import Reviews from "@/components/Reviews";
+import Brands from "@/components/Brands";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <Achievements />
       <Reviews />
+      <Brands />
       <Footer />
     </main>
   );

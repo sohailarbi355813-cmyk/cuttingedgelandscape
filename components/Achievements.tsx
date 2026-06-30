@@ -102,9 +102,11 @@ export default function Achievements() {
                   </div>
 
                   {/* BEST of the BEST */}
-                  <div className="text-center font-sans tracking-tighter leading-none mb-1.5">
-                    <span className="text-[#101014] font-black text-[22px] block">
-                      BEST <span className="text-[#ff5e00] font-serif italic text-lg font-normal lowercase tracking-normal mx-0.5">of the</span> BEST
+                  <div className="text-center font-sans tracking-tight leading-none mb-3 mt-1.5 flex flex-col items-center select-none">
+                    <span className="text-[#111111] font-black text-3xl tracking-tighter block mb-0.5">BEST</span>
+                    <span className="text-[#111111] font-black text-3xl tracking-tighter flex items-center justify-center leading-none">
+                      <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }} className="text-[#ff5e00] font-normal lowercase tracking-normal text-xl mr-1.5 align-middle leading-none">of the</span>
+                      BEST
                     </span>
                   </div>
 

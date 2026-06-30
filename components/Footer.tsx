@@ -131,11 +131,16 @@ export default function Footer() {
               initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerVariants}
             >
               <ul className="space-y-6">
-                {["Home", "About Us", "Our Services", "Our Process"].map((l) => (
-                  <motion.li key={l} variants={itemVariants}>
-                    <a href="#" className="group flex items-center text-[#F5F0E8]/60 hover:text-[#C9A84C] transition-all duration-300 font-[family-name:var(--font-display)] text-3xl md:text-4xl">
+                {[
+                  { label: "Home", href: "#home" },
+                  { label: "About Us", href: "#about" },
+                  { label: "Our Services", href: "#services" },
+                  { label: "Our Process", href: "#process" }
+                ].map((l) => (
+                  <motion.li key={l.label} variants={itemVariants}>
+                    <a href={l.href} className="group flex items-center text-[#F5F0E8]/60 hover:text-[#C9A84C] transition-all duration-300 font-[family-name:var(--font-display)] text-3xl md:text-4xl">
                       <span className="w-0 h-px bg-[#C9A84C] mr-0 group-hover:w-8 group-hover:mr-4 transition-all duration-500 ease-out"></span>
-                      <span className="group-hover:translate-x-2 transition-transform duration-500 ease-out">{l}</span>
+                      <span className="group-hover:translate-x-2 transition-transform duration-500 ease-out">{l.label}</span>
                     </a>
                   </motion.li>
                 ))}

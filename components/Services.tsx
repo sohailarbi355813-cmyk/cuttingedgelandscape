@@ -10,7 +10,7 @@ const SERVICES = [
   { num: "05", name: "Artificial Turf", image: "/images/artificial-turf.jpeg", desc: "Low-maintenance, evergreen artificial turf installations." },
   { num: "06", name: "Property Maintenance", image: "/images/whatsapp/w7.jpeg", desc: "Comprehensive maintenance packages for your landscape." },
   { num: "07", name: "Pools", image: "/images/whatsapp/w21.jpeg", desc: "Luxury pool design and construction tailored to your backyard environment." },
-  { num: "08", name: "Snow Removal", image: "/images/whatsapp/snowplow.png", desc: "Reliable commercial and residential snow clearing." },
+  { num: "08", name: "Snow Removal", image: "/images/whatsapp/snowplow.jpeg", desc: "Reliable commercial and residential snow clearing." },
   { num: "09", name: "Interlocking Stone", image: "/images/whatsapp/w1.jpeg", desc: "Premium interlocking driveways, patios, and walkways built to last." },
   { num: "10", name: "Sodding", image: "/images/whatsapp/w14.jpeg", desc: "Instant, lush green lawns installed with premium quality sod." },
 ];

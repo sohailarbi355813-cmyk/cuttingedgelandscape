@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SERVICES = [
-  { num: "01", name: "Flagstone", image: "/images/flagstone.jpeg", desc: "Cutting Edge landscaping has provided premium landscape and maintenance services." },
-  { num: "02", name: "Retaining Walls", image: "/images/retaining-walls-premium.png", desc: "Durable and aesthetically pleasing retaining walls." },
-  { num: "03", name: "Hot Tubs", image: "/images/hot-tubs.jpeg", desc: "Transform your backyard into a personal oasis." },
-  { num: "04", name: "Decks & Fences", image: "/images/decks-fences.jpeg", desc: "Custom-built wooden structures providing privacy and perfect outdoor living spaces." },
+  { num: "01", name: "Flagstone", image: "/images/whatsapp/w22.jpeg", desc: "Cutting Edge landscaping has provided premium landscape and maintenance services." },
+  { num: "02", name: "Retaining Walls", image: "/images/whatsapp/w10.jpeg", desc: "Durable and aesthetically pleasing retaining walls." },
+  { num: "03", name: "Hot Tubs", image: "/images/whatsapp/w18.jpeg", desc: "Transform your backyard into a personal oasis." },
+  { num: "04", name: "Decks & Fences", image: "/images/whatsapp/w15.jpeg", desc: "Custom-built wooden structures providing privacy and perfect outdoor living spaces." },
   { num: "05", name: "Artificial Turf", image: "/images/artificial-turf.jpeg", desc: "Low-maintenance, evergreen artificial turf installations." },
-  { num: "06", name: "Property Maintenance", image: "/images/hero.png", desc: "Comprehensive maintenance packages for your landscape." },
-  { num: "07", name: "Pools", image: "/images/pools.jpeg", desc: "Luxury pool design and construction tailored to your backyard environment." },
+  { num: "06", name: "Property Maintenance", image: "/images/whatsapp/w7.jpeg", desc: "Comprehensive maintenance packages for your landscape." },
+  { num: "07", name: "Pools", image: "/images/whatsapp/w21.jpeg", desc: "Luxury pool design and construction tailored to your backyard environment." },
   { num: "08", name: "Snow Removal", image: "/images/snow-removal.jpeg", desc: "Reliable commercial and residential snow clearing." },
-  { num: "09", name: "Interlocking Stone", image: "/images/interlocking-stone.jpeg", desc: "Premium interlocking driveways, patios, and walkways built to last." },
-  { num: "10", name: "Sodding", image: "/images/sodding.jpeg", desc: "Instant, lush green lawns installed with premium quality sod." },
+  { num: "09", name: "Interlocking Stone", image: "/images/whatsapp/w1.jpeg", desc: "Premium interlocking driveways, patios, and walkways built to last." },
+  { num: "10", name: "Sodding", image: "/images/whatsapp/w14.jpeg", desc: "Instant, lush green lawns installed with premium quality sod." },
 ];
 
 export default function Services() {

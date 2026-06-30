@@ -73,7 +73,7 @@ export default function About() {
               transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.1 }}
               className="absolute top-0 right-0 w-[85%] h-[85%] glow-border rounded-[1.5rem] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.6)] z-10"
             >
-              <Image src="/images/hero.png" alt="Premium landscaping project" fill className="object-cover brightness-75" />
+              <Image src="/images/whatsapp/w18.jpeg" alt="Premium landscaping project" fill className="object-cover brightness-75" />
             </motion.div>
 
             {/* Overlapping Secondary Image */}
@@ -85,7 +85,7 @@ export default function About() {
               transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.2 }}
               className="absolute bottom-0 left-0 w-[55%] h-[50%] glow-border rounded-[1.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.9)] z-20"
             >
-              <Image src="/images/hardscaping.png" alt="Expert hardscaping" fill className="object-cover brightness-90" />
+              <Image src="/images/whatsapp/w22.jpeg" alt="Expert hardscaping" fill className="object-cover brightness-90" />
               
               {/* Image Overlay Label */}
               <div className="absolute bottom-4 left-4 bg-[#0a0a0c]/80 backdrop-blur-md px-4 py-2 rounded-lg border border-[#F5F0E8]/10">

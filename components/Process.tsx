@@ -145,8 +145,8 @@ export default function Process() {
           className="relative w-full md:max-w-[1100px] h-[300px] md:h-[500px] rounded-[2rem] overflow-hidden md:ml-auto order-2 md:order-none"
         >
           <Image 
-            src="/images/hardscaping.png" 
-            alt="Outdoor Kitchen" 
+            src="/images/whatsapp/w10.jpeg" 
+            alt="Expert Landscaping" 
             fill 
             className="object-cover brightness-75"
           />
